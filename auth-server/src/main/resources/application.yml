@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: auth-server
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    instance:
+      hostname: auth-server
+keyStore:
+  path: keystore.jks
+  password: password
+server:
+  servlet:
+    context-path: /api
